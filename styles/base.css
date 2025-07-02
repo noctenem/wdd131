@@ -37,9 +37,6 @@ nav {
   background-color: #24343d;
   margin: 0 auto;
   max-width: 800px;
-}
-
-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,11 +44,8 @@ nav ul {
   padding: 10px;
 }
 
-nav ul li {
-  display: inline-block;
-}
-
 nav a {
+  display: inline-block;
   color: var(--secondary-color);
   padding: 1rem;
 }
