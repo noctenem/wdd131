@@ -30,15 +30,16 @@ header {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #hamburger-btn {
-    font-size: 2rem;
+    font-size: 2.5rem;
     background: none;
     color: var(--primary-color);
     cursor: pointer;
     z-index: 100;
+    padding: 10px;
 }
 
 #nav-menu {
@@ -65,7 +66,8 @@ h1 {
 
 #nav-list li a {
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 10px;
 }
 
 #nav-list li a:hover {
@@ -93,14 +95,14 @@ figure {
 }
 
 figure img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
 figcaption {
     margin-top: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--secondary-color);
 }
 
@@ -119,8 +121,8 @@ footer {
     }
     
     #nav-list li a{
-            font-size: 1rem;
-            padding: 0 10px;
+            font-size: 1.2rem;
+            padding: 0 15px;
 
         }
 
@@ -129,8 +131,7 @@ footer {
     }
 
     .temple-gallery {
-        grid-template-columns:  repeat(3,1fr);
+        grid-template-columns:  repeat(2,1fr);
     }
 
- 
 } 

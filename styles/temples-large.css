@@ -11,4 +11,9 @@
     .temple-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #nav-list li a {
+        font-size: 1.4rem;
+        padding: 0 15px;
+    }
 }
