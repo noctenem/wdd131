@@ -26,11 +26,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 2rem;
+    padding: 10px;
+    width: 100%;
 }
 
 #hamburger-btn {
@@ -42,29 +39,34 @@ h1 {
     padding: 10px;
 }
 
-#nav-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-    
 #nav-list {
-    height: 45vh;
+    display: none;
+}
+
+#nav-list.visible {
+    display: block;
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
     background-color: #005a9c;
     text-align: center;
-    display: none;
 }
 
-#nav-list.visible {
-    display: block;
+h1 {
+    font-size: 2rem;
 }
 
+#nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ 
 #nav-list li a {
+    display: inline-block;
+    text-align: center;
     color: var(--primary-color);
     font-size: 2rem;
     padding: 10px;
@@ -114,20 +116,22 @@ footer {
 }
 
 @media (min-width: 768px){
-    #nav-list {
-        position: initial;
-        display: flex;
-        height: initial;
-    }
-    
-    #nav-list li a{
-            font-size: 1.2rem;
-            padding: 0 15px;
-
-        }
-
     #hamburger-btn {
-        display: none;
+         display: none;
+     } 
+
+     #nav-list, #nav-list.visible {
+        display: flex;
+        gap: 0 10px;
+        height: initial;
+        position: initial;
+     }
+
+
+    #nav-list li a{
+        font-size: 1.2rem;
+        padding: 0 15px;
+        
     }
 
     .temple-gallery {
