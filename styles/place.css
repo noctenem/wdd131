@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #1e3d59;
+    --accent-color: #f5f0e1;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: var(--text-color);
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--accent-color);
+}
+
+header, footer {
+    background-color: var(--primary-color); 
+    text-align: center;
+    padding: 1rem;
+}
+
+header *, footer * {color: var(--accent-color);}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section p {
+    display: flex;
+    gap: 0 4px;
+    justify-content:  space-between;
+    align-items: center;
+    width: 300px;
+}
+
+section p strong {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+section p span {
+    display: flex;
+    width: 50%;
+    justify-content: start;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.weather h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.weather h2 .weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.data, .weather {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.weather-svg {
+    display: block;
+    width: 40px;
+    margin: 0.5rem 0;
+}
+
+.weather-icon::after {
+    content: url('../images/weather-icon.svg');
+    margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    main {position: relative;}
+
+    picture img {
+        width: 100%;
+        height: 79vh;
+        display: block;
+    }
+
+    .data, .weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .data {
+        top: 80px;
+        left: 50px;
+    }
+
+    .weather {
+        bottom: 80px;
+        right: 50px;
+    }
+
+    .weather h2 {
+        flex-direction: row;
+    }
+
+}
