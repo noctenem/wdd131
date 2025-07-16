@@ -70,9 +70,12 @@ picture img {
 
 }
 
-.weather h2 .weather-icon {
-    width: 50px;
-    height: 50px;
+.weather img {
+    display: inline-block;
+}
+    
+.weather span {
+    content: '';
 }
 
 .data, .weather {
@@ -80,17 +83,6 @@ picture img {
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 8px;
-}
-
-.weather-svg {
-    display: block;
-    width: 40px;
-    margin: 0.5rem 0;
-}
-
-.weather-icon::after {
-    content: url('../images/weather-icon.svg');
-    margin-left: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -122,5 +114,15 @@ picture img {
     .weather h2 {
         flex-direction: row;
     }
+    .weather img {
+        display: none;
+    }
+
+    .weather .weather-icon::after {
+        content: '⛅';
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
 
 }
