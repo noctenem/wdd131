@@ -1,0 +1,19 @@
+@media (min-width: 1024px) {
+    header {
+        text-align: left;
+        padding: 2rem;
+    }
+
+    #nav-list {
+        justify-content: flex-start;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #nav-list li a {
+        font-size: 1.4rem;
+        padding: 0 15px;
+    }
+}
