@@ -49,7 +49,7 @@ window.onload = function() {
             d.getElementById('username').textContent = user.name;
             d.getElementById('user-email').textContent = user.email;
         } else {
-            alert('No user data found in localStorage');
+            console.log('No user data found in localStorage');
         }
     }
     
