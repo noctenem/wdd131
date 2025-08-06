@@ -1,0 +1,233 @@
+:root {
+    --primary-color: #07090c;
+    --secondary-color: #eaf1fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    border: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button, .btn {cursor: pointer;}
+
+hr {
+    border-bottom: 1px solid #616e7d4d;
+    width: 80%;
+    margin: 50px auto;
+        animation: fadeIn 1s ease-out forwards;
+}
+
+.read-more {
+    color: #07090c56;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+footer {font-size: 0.8rem;}
+
+nav * {
+    text-align: center;
+}
+
+nav .menu-icon {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+nav span {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    padding: 20px 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+nav span a {
+    display: inline-block;
+    padding: 5px;
+    color: var(--secondary-color);
+}
+
+nav span a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    position: sticky;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    position: absolute;
+    padding: 10px;
+    border-radius: 30px;
+    max-width: 500px;
+    color: var(--secondary-color);
+    gap: 20px 0;
+}
+
+.hero-content a {
+    background-color: #07090c98;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    border-radius: 10px;
+
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content section {
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 3px #07090c31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.content section img {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #07090c31;
+}
+
+.info {
+    width: 400px;
+    margin: auto;
+}
+
+#form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0;
+    box-shadow: 0 2px 5px #07090c31;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e9378a;
+    color: var(--primary-color);
+    
+}
+
+#form input, #form textarea {
+    border: 1px solid #07090c31;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+#form button {
+    background-color: #07090c;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    border-radius: 10px;
+
+}
+
+textarea {
+    resize: none;
+}
+
+#map {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    nav span {display: none;}
+}
+@media screen and (min-width: 768px) {
+    nav .menu-icon {display: none;}
+    nav span {
+        position: initial;
+        flex-direction: row;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+}
+
+/* EFX */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
